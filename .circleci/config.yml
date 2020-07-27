@@ -12,7 +12,7 @@ jobs:
             virtualenv venv
             . venv/bin/activate
             pip install --upgrade pip
-            pip install -r le_poste/requirements.txt
+            pip install -r packages/le_poste/requirements.txt
             chmod +x ./scripts/fetch.sh
             ./scripts/fetch.sh
             py.test -vv packages/le_poste/tests
