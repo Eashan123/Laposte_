@@ -1,0 +1,19 @@
+action: tox_check_6.3, msg: envreport
+cwd: /home/eashan/Eashan/Data_Science/NLP/nlp/project_multilingual/french_classifier/custom_pipeline/pipeline/leposte_6.3/le_poste
+cmd: /home/eashan/Eashan/Data_Science/NLP/nlp/project_multilingual/french_classifier/custom_pipeline/pipeline/leposte_6.3/le_poste/.tox/tox_check_6.3/bin/python -m pip freeze
+click==7.1.2
+imbalanced-learn==0.6.2
+joblib==0.15.1
+nltk==3.5
+numpy==1.18.4
+pandas==0.25.3
+pathlib==1.0.1
+python-dateutil==2.8.1
+pytz==2020.1
+regex==2020.5.14
+scikit-learn==0.22.2.post1
+scipy==1.4.1
+six==1.15.0
+snowballstemmer==2.0.0
+tqdm==4.46.0
+xlrd==1.2.0

@@ -1,0 +1,19 @@
+# use tox -e install_locally
+
+# pip install -e . (e -> installing local packages)
+
+or if you are in other folder.
+
+pip install -e /home/eashan/Eashan/Data_Science/STG/NLP/nlp/project_multilingual/french_classifier/custom_pipeline/Upload/le_poste
+
+# Key points:
+
+1. Package your model for reproducibility with effective use of versioning (including data)
+2. Clearly organize your preprocessing and feature engineering steps.
+3. Persist your predictions.
+4. Abstract model details in config.
+5. Validate your data.
+
+# If you are adding new changes and improving the model, be sure to update the version number.
+
+# This folder can be considered as a local package.

@@ -1,0 +1,19 @@
+include *.txt
+include *.md
+include *.cfg
+include *.pkl
+include *.xlsx
+recursive-include ./le_poste/*
+
+include le_poste/data/train.xlsx
+include le_poste/data/test.xlsx
+include le_poste/data/MESSI_Extraction.xlsx
+include le_poste/models/*.pkl
+include le_poste/entity/*xlsx
+include le_poste/VERSION
+
+include ./requirements.txt
+exclude *.log
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]

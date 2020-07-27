@@ -1,0 +1,37 @@
+action: tox_check_6.3, msg: getenv
+cwd: /home/eashan/Eashan/Data_Science/NLP/nlp/project_multilingual/french_classifier/custom_pipeline/pipeline/leposte_6.3/le_poste
+cmd: /home/eashan/Eashan/Data_Science/NLP/nlp/project_multilingual/french_classifier/custom_pipeline/pipeline/leposte_6.3/le_poste/.tox/tox_check_6.3/bin/pip install -rrequirements.txt
+Collecting numpy<1.19.0,>=1.18.1
+  Using cached numpy-1.18.4-cp37-cp37m-manylinux1_x86_64.whl (20.2 MB)
+Collecting pandas<0.26.0,>=0.25.3
+  Using cached pandas-0.25.3-cp37-cp37m-manylinux1_x86_64.whl (10.4 MB)
+Collecting scikit-learn<0.23.0,>=0.22.1
+  Using cached scikit_learn-0.22.2.post1-cp37-cp37m-manylinux1_x86_64.whl (7.1 MB)
+Collecting imbalanced-learn==0.6.2
+  Using cached imbalanced_learn-0.6.2-py3-none-any.whl (163 kB)
+Collecting snowballstemmer==2.0.0
+  Using cached snowballstemmer-2.0.0-py2.py3-none-any.whl (97 kB)
+Processing /home/eashan/.cache/pip/wheels/45/6c/46/a1865e7ba706b3817f5d1b2ff7ce8996aabdd0d03d47ba0266/nltk-3.5-py3-none-any.whl
+Collecting regex==2020.5.14
+  Using cached regex-2020.5.14-cp37-cp37m-manylinux2010_x86_64.whl (675 kB)
+Collecting xlrd>=1.0.0
+  Using cached xlrd-1.2.0-py2.py3-none-any.whl (103 kB)
+Processing /home/eashan/.cache/pip/wheels/6e/96/b8/10037fe231e23970bac58361d7c93571ab983a7bbc55e68550/pathlib-1.0.1-py3-none-any.whl
+Collecting joblib==0.15.1
+  Using cached joblib-0.15.1-py3-none-any.whl (298 kB)
+Collecting pytz>=2017.2
+  Using cached pytz-2020.1-py2.py3-none-any.whl (510 kB)
+Collecting python-dateutil>=2.6.1
+  Using cached python_dateutil-2.8.1-py2.py3-none-any.whl (227 kB)
+Collecting scipy>=0.17.0
+  Using cached scipy-1.4.1-cp37-cp37m-manylinux1_x86_64.whl (26.1 MB)
+Collecting tqdm
+  Using cached tqdm-4.46.0-py2.py3-none-any.whl (63 kB)
+Collecting click
+  Using cached click-7.1.2-py2.py3-none-any.whl (82 kB)
+Collecting six>=1.5
+  Using cached six-1.15.0-py2.py3-none-any.whl (10 kB)
+Installing collected packages: numpy, pytz, six, python-dateutil, pandas, scipy, joblib, scikit-learn, imbalanced-learn, snowballstemmer, tqdm, regex, click, nltk, xlrd, pathlib
+Successfully installed click-7.1.2 imbalanced-learn-0.6.2 joblib-0.15.1 nltk-3.5 numpy-1.18.4 pandas-0.25.3 pathlib-1.0.1 python-dateutil-2.8.1 pytz-2020.1 regex-2020.5.14 scikit-learn-0.22.2.post1 scipy-1.4.1 six-1.15.0 snowballstemmer-2.0.0 tqdm-4.46.0 xlrd-1.2.0
+WARNING: You are using pip version 20.1; however, version 20.1.1 is available.
+You should consider upgrading via the '/home/eashan/Eashan/Data_Science/NLP/nlp/project_multilingual/french_classifier/custom_pipeline/pipeline/leposte_6.3/le_poste/.tox/tox_check_6.3/bin/python -m pip install --upgrade pip' command.

@@ -1,0 +1,61 @@
+action: tox_6.4, msg: getenv
+cwd: /home/eashan/Eashan/Data_Science/STG/NLP/nlp/project_multilingual/french_classifier/custom_pipeline/pipeline/lepost_entity/le_poste
+cmd: /home/eashan/Eashan/Data_Science/STG/NLP/nlp/project_multilingual/french_classifier/custom_pipeline/pipeline/lepost_entity/le_poste/.tox/tox_6.4/bin/pip install -rrequirements.txt
+Collecting numpy<1.19.0,>=1.18.1
+  Using cached numpy-1.18.5-cp37-cp37m-manylinux1_x86_64.whl (20.1 MB)
+Collecting pandas<0.26.0,>=0.25.3
+  Using cached pandas-0.25.3-cp37-cp37m-manylinux1_x86_64.whl (10.4 MB)
+Collecting scikit-learn<0.23.0,>=0.22.1
+  Using cached scikit_learn-0.22.2.post1-cp37-cp37m-manylinux1_x86_64.whl (7.1 MB)
+Collecting imbalanced-learn==0.6.2
+  Using cached imbalanced_learn-0.6.2-py3-none-any.whl (163 kB)
+Collecting snowballstemmer==2.0.0
+  Using cached snowballstemmer-2.0.0-py2.py3-none-any.whl (97 kB)
+Processing /home/eashan/.cache/pip/wheels/45/6c/46/a1865e7ba706b3817f5d1b2ff7ce8996aabdd0d03d47ba0266/nltk-3.5-py3-none-any.whl
+Collecting regex==2020.5.14
+  Using cached regex-2020.5.14-cp37-cp37m-manylinux2010_x86_64.whl (675 kB)
+Collecting xlrd>=1.0.0
+  Using cached xlrd-1.2.0-py2.py3-none-any.whl (103 kB)
+Processing /home/eashan/.cache/pip/wheels/6e/96/b8/10037fe231e23970bac58361d7c93571ab983a7bbc55e68550/pathlib-1.0.1-py3-none-any.whl
+Collecting joblib==0.15.1
+  Using cached joblib-0.15.1-py3-none-any.whl (298 kB)
+Processing /home/eashan/.cache/pip/wheels/5b/c0/e7/e16d3916984addf40bd021fa98d1624cb24a9adc48da4e62b5/openpyxl-3.0.3-py2.py3-none-any.whl
+Collecting pytest<6.0.0,>=5.3.2
+  Using cached pytest-5.4.3-py3-none-any.whl (248 kB)
+Collecting python-dateutil>=2.6.1
+  Using cached python_dateutil-2.8.1-py2.py3-none-any.whl (227 kB)
+Collecting pytz>=2017.2
+  Using cached pytz-2020.1-py2.py3-none-any.whl (510 kB)
+Collecting scipy>=0.17.0
+  Using cached scipy-1.4.1-cp37-cp37m-manylinux1_x86_64.whl (26.1 MB)
+Collecting click
+  Using cached click-7.1.2-py2.py3-none-any.whl (82 kB)
+Collecting tqdm
+  Using cached tqdm-4.46.1-py2.py3-none-any.whl (63 kB)
+Processing /home/eashan/.cache/pip/wheels/e2/bd/55/048b4fd505716c4c298f42ee02dffd9496bb6d212b266c7f31/et_xmlfile-1.0.1-py3-none-any.whl
+Collecting jdcal
+  Using cached jdcal-1.4.1-py2.py3-none-any.whl (9.5 kB)
+Collecting py>=1.5.0
+  Using cached py-1.8.1-py2.py3-none-any.whl (83 kB)
+Collecting pluggy<1.0,>=0.12
+  Using cached pluggy-0.13.1-py2.py3-none-any.whl (18 kB)
+Collecting importlib-metadata>=0.12; python_version < "3.8"
+  Using cached importlib_metadata-1.6.1-py2.py3-none-any.whl (31 kB)
+Collecting packaging
+  Using cached packaging-20.4-py2.py3-none-any.whl (37 kB)
+Collecting more-itertools>=4.0.0
+  Using cached more_itertools-8.3.0-py3-none-any.whl (44 kB)
+Collecting wcwidth
+  Using cached wcwidth-0.2.4-py2.py3-none-any.whl (30 kB)
+Collecting attrs>=17.4.0
+  Using cached attrs-19.3.0-py2.py3-none-any.whl (39 kB)
+Collecting six>=1.5
+  Using cached six-1.15.0-py2.py3-none-any.whl (10 kB)
+Collecting zipp>=0.5
+  Using cached zipp-3.1.0-py3-none-any.whl (4.9 kB)
+Collecting pyparsing>=2.0.2
+  Using cached pyparsing-2.4.7-py2.py3-none-any.whl (67 kB)
+Installing collected packages: numpy, six, python-dateutil, pytz, pandas, scipy, joblib, scikit-learn, imbalanced-learn, snowballstemmer, regex, click, tqdm, nltk, xlrd, pathlib, et-xmlfile, jdcal, openpyxl, py, zipp, importlib-metadata, pluggy, pyparsing, packaging, more-itertools, wcwidth, attrs, pytest
+Successfully installed attrs-19.3.0 click-7.1.2 et-xmlfile-1.0.1 imbalanced-learn-0.6.2 importlib-metadata-1.6.1 jdcal-1.4.1 joblib-0.15.1 more-itertools-8.3.0 nltk-3.5 numpy-1.18.5 openpyxl-3.0.3 packaging-20.4 pandas-0.25.3 pathlib-1.0.1 pluggy-0.13.1 py-1.8.1 pyparsing-2.4.7 pytest-5.4.3 python-dateutil-2.8.1 pytz-2020.1 regex-2020.5.14 scikit-learn-0.22.2.post1 scipy-1.4.1 six-1.15.0 snowballstemmer-2.0.0 tqdm-4.46.1 wcwidth-0.2.4 xlrd-1.2.0 zipp-3.1.0
+WARNING: You are using pip version 20.1; however, version 20.1.1 is available.
+You should consider upgrading via the '/home/eashan/Eashan/Data_Science/STG/NLP/nlp/project_multilingual/french_classifier/custom_pipeline/pipeline/lepost_entity/le_poste/.tox/tox_6.4/bin/python -m pip install --upgrade pip' command.

@@ -1,0 +1,7 @@
+action: tox_check_6.4, msg: getenv
+cwd: /home/eashan/Eashan/Data_Science/STG/NLP/nlp/project_multilingual/french_classifier/custom_pipeline/pipeline/leposte_6.4/le_poste/.tox
+cmd: /home/eashan/anaconda3/bin/python -m virtualenv --no-download --python /home/eashan/anaconda3/bin/python tox_check_6.4
+created virtual environment CPython3.7.6.final.0-64 in 3050ms
+  creator CPython3Posix(dest=/home/eashan/Eashan/Data_Science/STG/NLP/nlp/project_multilingual/french_classifier/custom_pipeline/pipeline/leposte_6.4/le_poste/.tox/tox_check_6.4, clear=False, global=False)
+  seeder FromAppData(download=False, pip=latest, setuptools=latest, wheel=latest, via=copy, app_data_dir=/home/eashan/.local/share/virtualenv/seed-app-data/v1.0.1)
+  activators BashActivator,CShellActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator

@@ -1,0 +1,24 @@
+version: 2
+jobs:
+  test_classification_model:
+    working_directory: ~/project
+    docker:
+      - image: circleci/python:3.6.9
+    steps:
+      - checkout
+      - run:
+          name: Runnning tests
+          command: |
+            virtualenv venv
+            . venv/bin/activate
+            pip install --upgrade pip
+            pip install -r le_poste/requirements.txt
+            chmod +x ./scripts/fetch.sh
+            ./scripts/fetch.sh
+            py.test -vv packages/le_poste/tests
+
+workflows:
+  version: 2
+  test-all:
+    jobs:
+      - test_classification_model
