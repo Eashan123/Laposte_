@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: le-poste
+Version: 0.1.0
+Summary: Train and deploy classification and entity extraction model.
+Home-page: https://github.com/Eashan123/Laposte_
+Author: Eashan Deshmukh
+Author-email: eashandeshmukh@gmail.com
+License: MIT
+Description: Train and deploy classification and entity extraction model.
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
