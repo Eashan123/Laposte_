@@ -3,7 +3,7 @@ jobs:
   test_classification_model:
     working_directory: ~/project
     docker:
-      - image: circleci/python:3.6.9
+      - image: circleci/python:3.7.2
     steps:
       - checkout
       - run:
@@ -17,8 +17,50 @@ jobs:
             ./scripts/fetch.sh
             py.test -vv packages/le_poste/tests
 
+  test_ml_api:
+    working_directory: ~/project
+    docker:
+      - image: circleci/python:3.7.2
+    steps:
+      - checkout
+      - run:
+          name: Runnning tests
+          command: |
+            virtualenv venv
+            . venv/bin/activate
+            pip install --upgrade pip
+            pip install -r packages/ml_api/requirements.txt
+            py.test -vv packages/ml_api/tests
+
+  train_and_upload_classification_model:
+    working_directory: ~/project
+    docker:
+      - image: circleci/python:3.7.2
+    steps:
+      - checkout
+      - run: 
+          name: Setup env
+          command: |
+            virtualenv venv
+            . venv/bin/activate
+            pip install -r packages/le_poste/requirements.txt
+      - run: 
+          name: Publish model
+          command: |
+            . venv/bin/activate
+            chmod +x ./scripts/fetch.sh ./scripts/publish_model.sh
+            ./scripts/fetch.sh
+            PYTHONPATH=./packages/le_poste python3 packages/le_poste/le_poste/trained_models/train_pipeline.py
+            ./scripts/publish_model.sh ./packages/le_poste/
+
+
 workflows:
   version: 2
   test-all:
     jobs:
       - test_classification_model
+      - test_ml_api
+      - train_and_upload_classification_model
+      - test_ml_api:
+          requires:
+            - train_and_upload_classification_model

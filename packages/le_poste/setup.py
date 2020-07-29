@@ -11,7 +11,7 @@ from setuptools import find_packages, setup
 # Package meta-data.
 NAME = 'le_poste'
 DESCRIPTION = 'Train and deploy classification and entity extraction model.'
-URL = 'https://github.com/Eashan123/Laposte'
+URL = 'https://github.com/Eashan123/Laposte_'
 EMAIL = 'eashandeshmukh@gmail.com'
 AUTHOR = 'Eashan Deshmukh'
 REQUIRES_PYTHON = '>=3.6.0'

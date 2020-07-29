@@ -7,3 +7,6 @@ envr/*
 
 #Git
 .git/*
+
+#Gemfury
+gemfury.txt

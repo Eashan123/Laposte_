@@ -3,4 +3,7 @@ flask==1.0.2
 
 # local regression_model package
 # update with your local path
--e "/home/eashan/Eashan/Data_Science/STG/NLP/nlp/project_multilingual/french_classifier/custom_pipeline/Upload/le_poste"
+#-e "/home/eashan/Eashan/Data_Science/STG/NLP/nlp/project_multilingual/french_classifier/custom_pipeline/Upload/le_poste"
+
+#Install from gemfury
+le_poste==0.1.0
