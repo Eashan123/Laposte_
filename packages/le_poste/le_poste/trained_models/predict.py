@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-from le_poste.entity_extraction.extraction.extraction_ import Entity_Extraction
+#from le_poste.entity_extraction.extraction.extraction_ import Entity_Extraction
 from le_poste.processing.data_management import load_pipeline
 from le_poste.config import config
 from le_poste.processing import validation
@@ -29,49 +29,5 @@ def make_prediction(*, input_data) -> dict:
         f"Predictions: {response}"
     )
     
-    ## entity ##
-    
-    subject = response
-
-    ind = []
-    # ind_queue = []
-    for i in subject.values():
-        cnt = 0
-        for j in i:
-            if j == config.CAT:
-                ind.append(cnt)
-            # else:
-            #     ind_queue.append(cnt)
-            cnt += 1
-
-    new_df = data.iloc[ind]
-    # queue_df = data.iloc[ind_queue]
-
-    new_df.reset_index(inplace = True, drop = True)
-    # queue_df.reset_index(inplace = True, drop = True)
-
-    # name_q = f"{config.MANUALEn_SAVE_FILE}{_version}.xlsx"
-
-    # q = Queue(queue_df, name_q, config.ENTITY_DIR)
-    # q.fit()
-    # q.transform()
-
-    df_res = new_df[[config.FEATURES]]
-    df_des = new_df[[config.TARGET]]
-    
-    name = f"{config.ENTITY_SAVE_FILE}{_version}.xlsx"
-    print("name -> {} \n\n".format(name))
-
-    z = Entity_Extraction(new_df, config.ENTITY_DIR, name)
-    df = z.fit()
-    z.transform(df)
-    _logger.info(f"entity extraction done")
-
-    for i in df.columns:
-      if i == 'config.DROP_F':
-        df = df.drop(columns=config.DROP_F)
-
-    # dataframe to json REST
-    
-
+ 
     return response
