@@ -24,7 +24,7 @@ fetch_data: &fetch_data
 
 jobs:
 
-  test_classificatio_model:
+  test_classification_model:
     <<: *defaults
     steps:
       - checkout
