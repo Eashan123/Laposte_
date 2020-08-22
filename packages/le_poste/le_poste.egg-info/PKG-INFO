@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: le-poste
-Version: 0.1.0
+Version: 0.1.1
 Summary: Train and deploy classification and entity extraction model.
 Home-page: https://github.com/Eashan123/Laposte_
 Author: Eashan Deshmukh
