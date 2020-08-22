@@ -8,7 +8,7 @@ flask==1.0.2
 #-e "/home/eashan/Eashan/Data_Science/STG/NLP/nlp/project_multilingual/french_classifier/custom_pipeline/Upload_2/le_poste"
 
 #Install from gemfury
-le-poste==0.1.0
+le-poste==0.1.1
 
 # Deployment
 gunicorn==19.9.0
