@@ -1,6 +1,7 @@
 from flask import Blueprint, request, jsonify
 from api.config import get_logger
 from le_poste import __version__ as _version
+import json
 
 from le_poste.trained_models.predict import make_prediction
 from api import __version__ as api_version
@@ -33,7 +34,9 @@ def predict():
         json_data = request.get_json()
         _logger.info(f'Inputs: {json_data}')
 
-        result = make_prediction(input_data=json_data)
+        data = json.dumps(json_data)
+
+        result = make_prediction(input_data=data)
         _logger.info(f'Outputs: {result}')
 
         predictions = result.get('predictions')[0]
