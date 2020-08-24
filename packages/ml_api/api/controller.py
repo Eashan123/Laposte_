@@ -34,9 +34,9 @@ def predict():
         json_data = request.get_json()
         _logger.info(f'Inputs: {json_data}')
 
-        data = json.dumps(json_data)
+        # data = json.dumps(json_data)
 
-        result = make_prediction(input_data=data)
+        result = make_prediction(input_data=json_data)
         _logger.info(f'Outputs: {result}')
 
         predictions = result.get('predictions')[0]
