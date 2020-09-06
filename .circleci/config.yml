@@ -89,6 +89,16 @@ jobs:
             chmod +x ./scripts/publish_model.sh
             ./scripts/publish_model.sh ./packages/le_poste/
 
+  section_10_deploy_to_heroku:
+    <<: *defaults
+    steps:
+      - checkout
+      - run:
+          name: Deploy to Heroku
+          command: |
+            git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
+
+
 
 workflows:
   version: 2
@@ -100,7 +110,14 @@ workflows:
           requires:
             - test_classification_model
             - test_ml_api
-          # filters:
-          #   branches:
-          #     only:
-          #       - master
+          filters:
+            branches:
+              only:
+                - master
+      - section_10_deploy_to_heroku:
+          requires:
+            - train_and_upload_classification_model
+          filters:
+            branches:
+              only:
+                - master
